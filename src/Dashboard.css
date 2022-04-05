@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+.Dashboard {
+	background-color: #f4f2fc;
+}
+.sideIcon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: white;
+	height: 5vh;
+	padding-left: 10px;
+	width: 100%;
+	cursor: pointer;
+	z-index: 10;
+}
+.pageContainer {
+	display: flex;
+	flex-direction: row;
+}
+.FontAwesomeIcon {
+	background-color: white;
+}
+.close {
+	font-size: medium;
+	font-weight: bold;
+	color: black;
+	border: 1px solid black;
+	width: fit-content;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	border-radius: 100%;
+	padding: 1px 7px;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+@media only screen and (max-width: 550px) {
+	.sideIcon {
+		position: fixed;
+		margin-bottom: 10px;
+	}
+}

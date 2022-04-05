@@ -1,0 +1,182 @@
+.DashContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-grow: 1;
+}
+.walletContainer {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 45% 45%;
+	justify-content: space-around;
+	min-height: 200px;
+}
+.myWallet {
+	background-color: #f2e8ff;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.title_date {
+	background-color: #f2e8ff;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+.title_date h4 {
+	padding-left: 12px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	color: #3c4257;
+}
+.title_date p {
+	opacity: 50%;
+	position: absolute;
+	right: 8px;
+}
+.walletIcons {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	opacity: 85%;
+	height: fit-content;
+}
+.iconCover {
+	border-radius: 100%;
+	background-color: #6f3ecc;
+	cursor: pointer;
+}
+.walletContainer h6 {
+	font-size: small;
+	font-weight: 600;
+}
+.loan {
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.loan p {
+	font-weight: 400;
+	font-size: large;
+	letter-spacing: 1px;
+	opacity: 80%;
+}
+.loan button {
+	width: 70%;
+	height: 50px;
+	background-color: #4400c2;
+	cursor: pointer;
+	color: #fdfefc;
+	font-size: large;
+	font-family: "Trebuchet MS";
+	font-weight: 800;
+}
+.paymentsContainer {
+	margin: 30px;
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	align-items: center;
+	background-color: white;
+	min-height: 90px;
+	border-radius: 20px;
+	justify-content: space-evenly;
+}
+.paymentItems {
+	width: 70%;
+	margin: 20px 5px;
+}
+.paymentTitle {
+	font-weight: bold;
+	font-size: medium;
+	margin-right: 10px;
+}
+.paymentTitle span {
+	color: white;
+	background-color: #9b7ed4;
+	border-radius: 100%;
+	font-style: italic;
+	padding: 1px 3px;
+}
+.paymentItem {
+	opacity: 75%;
+}
+.paymentItem p {
+	opacity: 65%;
+}
+.rec.rec-arrow {
+	background-color: white;
+	color: #4403c1;
+}
+.transItems {
+	background-color: #f8f8f8;
+	margin: 30px;
+}
+.TransItem {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	margin: 15px;
+	border-radius: 20px;
+	padding: 5px;
+	padding-right: 10px;
+}
+.transTitle {
+	font-size: medium;
+	font-weight: bold;
+}
+.transCatg,
+.transDate {
+	opacity: 50%;
+}
+.transStat {
+	background-color: #6f3ecc;
+	padding: 1px 14px;
+	border-radius: 20px;
+}
+.transPrice {
+	font-size: medium;
+	font-weight: 400;
+}
+.transPrice span {
+	font-weight: bolder;
+}
+.transImage {
+	width: 50px;
+	height: 50px;
+}
+@media only screen and (max-width: 550px) {
+	.DashContent {
+		width: 100vw;
+		padding: 0px 5px;
+	}
+	.walletContainer {
+		display: flex;
+		flex-direction: column;
+		padding-top: 15px;
+	}
+	.myWallet {
+		margin-bottom: 10px;
+	}
+	.loan {
+		padding-bottom: 20px;
+	}
+	.paymentsContainer {
+		flex-direction: column;
+		padding: 5px;
+		width: 90vw;
+		margin: 20px auto;
+	}
+	.TransItem {
+		flex-direction: column;
+	}
+}

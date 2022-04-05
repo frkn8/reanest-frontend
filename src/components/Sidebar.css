@@ -1,0 +1,82 @@
+.Sidebar {
+	background-color: white;
+	overflow: hidden;
+	min-height: 94vh;
+	width: 300px;
+	transition: width 0.5s linear;
+}
+.userPart {
+	height: 200px;
+	background-color: #8e66db;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.userContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-weight: 600;
+	font-size: large;
+	background-color: #8e66db;
+}
+.userImage {
+	padding: 5px;
+	width: 90px;
+	height: 90px;
+	margin-right: 10px;
+}
+.userInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.viewProfile {
+	padding: 5px 15px;
+	color: white;
+	background-color: #8e66db;
+	border: 1px solid white;
+	font-size: medium;
+	border-radius: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	opacity: 80%;
+}
+.Icons {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.Icon {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin-bottom: 20px;
+	opacity: 70%;
+	justify-content: flex-start;
+	align-items: center;
+	opacity: 40%;
+	cursor: pointer;
+}
+.IconName {
+	margin-left: 40px;
+	font-size: large;
+	font-weight: 500;
+}
+.Icon:first-child {
+	opacity: 100%;
+	background-color: #eeeeee;
+}
+.hide {
+	width: 0px;
+}
+
+@media only screen and (max-width: 550px) {
+	.Sidebar {
+		position: fixed;
+		z-index: 100;
+	}
+}
